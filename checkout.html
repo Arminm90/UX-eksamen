@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/checkout.js" defer></script>
+    <script src="js/logout.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-outer-width">
+        <a href="home.html"><img id="logo" src="img/logo.png" alt="logo" /></a>
+      </div>
+      <a class="burger-menu" href="#navbar" aria-label="Open main menu">
+        <!-- switch out with burger menu svg -->
+        <h3>☰</h3>
+      </a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li id="products_nav"><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="nav-outer-width"><button id="logOut">Log out</button></div>
+        <a class="burger-menu-close" href="#" aria-label="Close main menu">
+          <!-- switch out with burger menu svg -->
+          <h3>X</h3>
+        </a>
+      </nav>
+    </header>
+
+    <main id="checkout-page">
+      <section>
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+          <div class="delivery-container">
+            <h2>Delivery Address</h2>
+            <div class="field-comtainer primary-field">
+              <label for="">Street Name</label>
+              <input type="text">
+            </div>
+            <div class="combined-fields">
+              <div class="field-comtainer">
+                <label for="">Postal Code</label>
+                <input type="number">
+              </div>
+              <div class="field-comtainer">
+                <label for="">Town/City</label>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="billing-container">
+            <h2>Billing Address</h2>
+            <div class="field-comtainer primary-field">
+              <label for="">Street Name</label>
+              <input type="text">
+            </div>
+            <div class="combined-fields">
+              <div class="field-comtainer">
+                <label for="">Postal Code</label>
+                <input type="number">
+              </div>
+              <div class="field-comtainer">
+                <label for="">Town/City</label>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <h2>Card Details</h2>
+            <div class="field-comtainer primary-field">
+              <label for="">Card Number</label>
+              <input type="text">
+            </div>
+            <div class="combined-fields">
+              <div class="field-comtainer">
+                <label for="">Expiration date</label>
+                <input type="month">
+              </div>
+              <div class="field-comtainer">
+                <label for="">CVC</label>
+                <input type="number">
+              </div>
+            </div>
+          </div>
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p class="delivery-cost">Delivery cost: $5</p>
+            <p>Total <span class="total-cost">$0</span></p>
+          </div>
+          <button onclick="confirm_purchase()">Finish Purchase</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <div>
+          <h3>Address:</h3>
+          <p>Apt. 943 706 Jasmine Burg, Lake Dana, PA 51750</p>
+        </div>
+ 
+        <div>
+          <h3>Opening hours:</h3>
+          <p>Open everyday from 9am to 8pm</p>
+        </div>
+ 
+        <div>
+          <h3>E-mail:</h3>
+          <p><a href="mailto:fakestore@shop.com">fakestore@shop.com</a></p>
+        </div>
+      </address>
+    </footer>
+  </body>
+</html>

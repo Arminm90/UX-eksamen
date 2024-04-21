@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/home.js" defer></script>
+    <script src="js/logout.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-outer-width">
+        <a href="home.html"><img id="logo" src="img/logo.png" alt="logo" /></a>
+      </div>
+      <a class="burger-menu" href="#navbar" aria-label="Open main menu">
+        <!-- switch out with burger menu svg -->
+        <h3>☰</h3>
+      </a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li id="products_nav"><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="nav-outer-width"><button id="logOut">Log out</button></div>
+        <a class="burger-menu-close" href="#" aria-label="Close main menu">
+          <!-- switch out with burger menu svg -->
+          <h3>X</h3>
+        </a>
+      </nav>
+    </header>
+
+    <main id="home-top">
+      <section>
+        <h1>EXPLORE A WORLD OF ITEMS</h1>
+        <hr />
+        <p>
+          We sell a stunning collection of clothes, cutting-edge electronics,
+          and exquisite jewelry to elevate your lifestyle.
+        </p>
+      </section>
+      <section>
+        <img src="img/forside_img.png" alt="" />
+      </section>
+    </main>
+
+    <main class="h2">
+      <h2>Gode deals på udvalgte varer:</h2>
+    </main>
+
+    <main id="product-list-home">
+      <!-- Product cards will be added here using JavaScript -->
+    </main>
+    <footer>
+      <address>
+        <div>
+          <h3>Address:</h3>
+          <p>Apt. 943 706 Jasmine Burg, Lake Dana, PA 51750</p>
+        </div>
+ 
+        <div>
+          <h3>Opening hours:</h3>
+          <p>Open everyday from 9am to 8pm</p>
+        </div>
+ 
+        <div>
+          <h3>E-mail:</h3>
+          <p><a href="mailto:fakestore@shop.com">fakestore@shop.com</a></p>
+        </div>
+      </address>
+    </footer>
+  </body>
+</html>
